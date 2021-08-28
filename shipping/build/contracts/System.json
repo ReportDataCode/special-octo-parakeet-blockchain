@@ -1,0 +1,2571 @@
+{
+  "contractName": "System",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        }
+      ],
+      "name": "LogNewAlert",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "Vaccinate",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "Delivered",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "Status",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"}],\"name\":\"LogNewAlert\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[],\"name\":\"Delivered\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"Status\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"Vaccinate\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Shipping.sol\":\"System\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Shipping.sol\":{\"keccak256\":\"0x3608c4626c86d9a4f55a1ca484fee5e158a46d0fed41094f2cb70ce7fd1806ce\",\"urls\":[\"bzz-raw://cddac58f027a022c11d1e8ff59282b2ec9c01d6dba6550185ead10acdab01d8f\",\"dweb:/ipfs/Qmcgb4P5tH8jGgfXCbhCdNdHrHHPDzEri5ezHNhkbrC8N3\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506002600060026101000a81548160ff0219169083600281111561003057fe5b0217905550610374806100446000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806345f09ce914610046578063779822f7146100c9578063de927519146100d3575b600080fd5b61004e6100dd565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561008e578082015181840152602081019050610073565b50505050905090810190601f1680156100bb5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100d1610101565b005b6100db610171565b005b606060008060019054906101000a900460ff1690506100fb816101fe565b91505090565b60026000806101000a81548160ff0219169083600281111561011f57fe5b02179055507fca75c80642b93c980135b8355995abae3ab06033dc81f956b3824323b4903ef560405180806020018281038252602681526020018061031a6026913960400191505060405180910390a1565b60008060026101000a81548160ff0219169083600281111561018f57fe5b02179055507fca75c80642b93c980135b8355995abae3ab06033dc81f956b3824323b4903ef56040518080602001828103825260208152602001807f596f75722070617469656e7420686173206265656e2076616363696e6174656481525060200191505060405180910390a1565b606081600281111561020c57fe5b6000600281111561021957fe5b141561025c576040518060400160405280600a81526020017f56616363696e61746564000000000000000000000000000000000000000000008152509050610314565b81600281111561026857fe5b6001600281111561027557fe5b14156102b8576040518060400160405280600d81526020017f4e6f7456616363696e61746564000000000000000000000000000000000000008152509050610314565b8160028111156102c457fe5b6002808111156102d057fe5b1415610313576040518060400160405280600781526020017f556e6b6e6f776e000000000000000000000000000000000000000000000000008152509050610314565b5b91905056fe596f75722056616363696e65205061636b61676520686173206265656e207368697070656421a265627a7a723158202408eae20c4d724d4669b957c8410f68868a80a8036c13417a60e2d777bb9c7564736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806345f09ce914610046578063779822f7146100c9578063de927519146100d3575b600080fd5b61004e6100dd565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561008e578082015181840152602081019050610073565b50505050905090810190601f1680156100bb5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100d1610101565b005b6100db610171565b005b606060008060019054906101000a900460ff1690506100fb816101fe565b91505090565b60026000806101000a81548160ff0219169083600281111561011f57fe5b02179055507fca75c80642b93c980135b8355995abae3ab06033dc81f956b3824323b4903ef560405180806020018281038252602681526020018061031a6026913960400191505060405180910390a1565b60008060026101000a81548160ff0219169083600281111561018f57fe5b02179055507fca75c80642b93c980135b8355995abae3ab06033dc81f956b3824323b4903ef56040518080602001828103825260208152602001807f596f75722070617469656e7420686173206265656e2076616363696e6174656481525060200191505060405180910390a1565b606081600281111561020c57fe5b6000600281111561021957fe5b141561025c576040518060400160405280600a81526020017f56616363696e61746564000000000000000000000000000000000000000000008152509050610314565b81600281111561026857fe5b6001600281111561027557fe5b14156102b8576040518060400160405280600d81526020017f4e6f7456616363696e61746564000000000000000000000000000000000000008152509050610314565b8160028111156102c457fe5b6002808111156102d057fe5b1415610313576040518060400160405280600781526020017f556e6b6e6f776e000000000000000000000000000000000000000000000000008152509050610314565b5b91905056fe596f75722056616363696e65205061636b61676520686173206265656e207368697070656421a265627a7a723158202408eae20c4d724d4669b957c8410f68868a80a8036c13417a60e2d777bb9c7564736f6c63430005100032",
+  "sourceMap": "34:1210:1:-;;;358:79;8:9:-1;5:2;;;30:1;27;20:12;5:2;358:79:1;405:25;389:13;;:41;;;;;;;;;;;;;;;;;;;;;;;;34:1210;;;;;;",
+  "deployedSourceMap": "34:1210:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:1210:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1080:157;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1080:157:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;600:147;;;:::i;:::-;;443:151;;;:::i;:::-;;1080:157;1119:13;1144:25;1172:13;;;;;;;;;;;1144:41;;1203:18;1213:7;1203:9;:18::i;:::-;1196:25;;;1080:157;:::o;600:147::-;647:24;638:6;;:33;;;;;;;;;;;;;;;;;;;;;;;;686:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;600:147::o;443:151::-;497:28;481:13;;:44;;;;;;;;;;;;;;;;;;;;;;;;540:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;443:151::o;753:322::-;822:13;883:7;851:39;;;;;;;;:28;:39;;;;;;;;;847:64;;;892:19;;;;;;;;;;;;;;;;;;;;;847:64;960:7;925:42;;;;;;;;:31;:42;;;;;;;;;921:70;;;969:22;;;;;;;;;;;;;;;;;;;;;921:70;1034:7;1005:36;;;;;;;;:25;:36;;;;;;;;;1001:58;;;1043:16;;;;;;;;;;;;;;;;;;;;;1001:58;753:322;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.9.0;\n\ncontract System {\n    enum ShippingStatus { Pending, Shipped, Delivered }\n    enum VaccinationStatus { Vaccinated, NotVaccinated, Unknown }\n\n    ShippingStatus private status;\n    VaccinationStatus private vaccineStatus;\n\n    VaccinationStatus private patientStatus;\n    \n    event LogNewAlert(string description);\n    \n    constructor() public {\n        patientStatus = VaccinationStatus.Unknown;\n    }\n\n    function Vaccinate() public {\n        patientStatus = VaccinationStatus.Vaccinated;\n        emit LogNewAlert(\"Your patient has been vaccinated\");\n    }\n\n    function Delivered() public {\n        status = ShippingStatus.Delivered;\n        emit LogNewAlert(\"Your Vaccine Package has been shipped!\");\n\n    }\n\n    function getStatus(VaccinationStatus _status) internal pure returns (string memory) {\n        if (VaccinationStatus.Vaccinated == _status) return \"Vaccinated\";\n        if (VaccinationStatus.NotVaccinated == _status) return \"NotVaccinated\";\n        if (VaccinationStatus.Unknown == _status) return \"Unknown\";\n        \n    }\n    function Status() public view returns (string memory) {\n        VaccinationStatus _status = vaccineStatus ;\n        return getStatus(_status);\n        \n    }\n\n\n\n\n\n}",
+  "sourcePath": "/home/andrew-developer/Blockchain-Network-Projects/indian-blockchain/shipping/contracts/Shipping.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Shipping.sol",
+    "exportedSymbols": {
+      "System": [
+        131
+      ]
+    },
+    "id": 132,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 131,
+        "linearizedBaseContracts": [
+          131
+        ],
+        "name": "System",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "System.ShippingStatus",
+            "id": 38,
+            "members": [
+              {
+                "id": 35,
+                "name": "Pending",
+                "nodeType": "EnumValue",
+                "src": "78:7:1"
+              },
+              {
+                "id": 36,
+                "name": "Shipped",
+                "nodeType": "EnumValue",
+                "src": "87:7:1"
+              },
+              {
+                "id": 37,
+                "name": "Delivered",
+                "nodeType": "EnumValue",
+                "src": "96:9:1"
+              }
+            ],
+            "name": "ShippingStatus",
+            "nodeType": "EnumDefinition",
+            "src": "56:51:1"
+          },
+          {
+            "canonicalName": "System.VaccinationStatus",
+            "id": 42,
+            "members": [
+              {
+                "id": 39,
+                "name": "Vaccinated",
+                "nodeType": "EnumValue",
+                "src": "137:10:1"
+              },
+              {
+                "id": 40,
+                "name": "NotVaccinated",
+                "nodeType": "EnumValue",
+                "src": "149:13:1"
+              },
+              {
+                "id": 41,
+                "name": "Unknown",
+                "nodeType": "EnumValue",
+                "src": "164:7:1"
+              }
+            ],
+            "name": "VaccinationStatus",
+            "nodeType": "EnumDefinition",
+            "src": "112:61:1"
+          },
+          {
+            "constant": false,
+            "id": 44,
+            "name": "status",
+            "nodeType": "VariableDeclaration",
+            "scope": 131,
+            "src": "179:29:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_ShippingStatus_$38",
+              "typeString": "enum System.ShippingStatus"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 43,
+              "name": "ShippingStatus",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 38,
+              "src": "179:14:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_ShippingStatus_$38",
+                "typeString": "enum System.ShippingStatus"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 46,
+            "name": "vaccineStatus",
+            "nodeType": "VariableDeclaration",
+            "scope": 131,
+            "src": "214:39:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+              "typeString": "enum System.VaccinationStatus"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 45,
+              "name": "VaccinationStatus",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 42,
+              "src": "214:17:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                "typeString": "enum System.VaccinationStatus"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 48,
+            "name": "patientStatus",
+            "nodeType": "VariableDeclaration",
+            "scope": 131,
+            "src": "260:39:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+              "typeString": "enum System.VaccinationStatus"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 47,
+              "name": "VaccinationStatus",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 42,
+              "src": "260:17:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                "typeString": "enum System.VaccinationStatus"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 52,
+            "name": "LogNewAlert",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 51,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 50,
+                  "indexed": false,
+                  "name": "description",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52,
+                  "src": "328:18:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 49,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "328:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "327:20:1"
+            },
+            "src": "310:38:1"
+          },
+          {
+            "body": {
+              "id": 60,
+              "nodeType": "Block",
+              "src": "379:58:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 58,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 55,
+                      "name": "patientStatus",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48,
+                      "src": "389:13:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 56,
+                        "name": "VaccinationStatus",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42,
+                        "src": "405:17:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_VaccinationStatus_$42_$",
+                          "typeString": "type(enum System.VaccinationStatus)"
+                        }
+                      },
+                      "id": 57,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Unknown",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "405:25:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      }
+                    },
+                    "src": "389:41:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                      "typeString": "enum System.VaccinationStatus"
+                    }
+                  },
+                  "id": 59,
+                  "nodeType": "ExpressionStatement",
+                  "src": "389:41:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 61,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "369:2:1"
+            },
+            "returnParameters": {
+              "id": 54,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "379:0:1"
+            },
+            "scope": 131,
+            "src": "358:79:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 73,
+              "nodeType": "Block",
+              "src": "471:123:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 67,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 64,
+                      "name": "patientStatus",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48,
+                      "src": "481:13:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 65,
+                        "name": "VaccinationStatus",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42,
+                        "src": "497:17:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_VaccinationStatus_$42_$",
+                          "typeString": "type(enum System.VaccinationStatus)"
+                        }
+                      },
+                      "id": 66,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Vaccinated",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "497:28:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      }
+                    },
+                    "src": "481:44:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                      "typeString": "enum System.VaccinationStatus"
+                    }
+                  },
+                  "id": 68,
+                  "nodeType": "ExpressionStatement",
+                  "src": "481:44:1"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "596f75722070617469656e7420686173206265656e2076616363696e61746564",
+                        "id": 70,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "552:34:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_69f853d362e0822153da6b3694928a6fd5a8ca8d3f6546c4fad89fb0dc21aaa3",
+                          "typeString": "literal_string \"Your patient has been vaccinated\""
+                        },
+                        "value": "Your patient has been vaccinated"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_69f853d362e0822153da6b3694928a6fd5a8ca8d3f6546c4fad89fb0dc21aaa3",
+                          "typeString": "literal_string \"Your patient has been vaccinated\""
+                        }
+                      ],
+                      "id": 69,
+                      "name": "LogNewAlert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52,
+                      "src": "540:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 71,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "540:47:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 72,
+                  "nodeType": "EmitStatement",
+                  "src": "535:52:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 74,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "Vaccinate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 62,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "461:2:1"
+            },
+            "returnParameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "471:0:1"
+            },
+            "scope": 131,
+            "src": "443:151:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 86,
+              "nodeType": "Block",
+              "src": "628:119:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 80,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 77,
+                      "name": "status",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44,
+                      "src": "638:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_ShippingStatus_$38",
+                        "typeString": "enum System.ShippingStatus"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 78,
+                        "name": "ShippingStatus",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 38,
+                        "src": "647:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_ShippingStatus_$38_$",
+                          "typeString": "type(enum System.ShippingStatus)"
+                        }
+                      },
+                      "id": 79,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Delivered",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "647:24:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_ShippingStatus_$38",
+                        "typeString": "enum System.ShippingStatus"
+                      }
+                    },
+                    "src": "638:33:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_ShippingStatus_$38",
+                      "typeString": "enum System.ShippingStatus"
+                    }
+                  },
+                  "id": 81,
+                  "nodeType": "ExpressionStatement",
+                  "src": "638:33:1"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "596f75722056616363696e65205061636b61676520686173206265656e207368697070656421",
+                        "id": 83,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "698:40:1",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_3b4320ca945419ec3fed5c04650729fa8afbf0639889799afebe58b6554a9128",
+                          "typeString": "literal_string \"Your Vaccine Package has been shipped!\""
+                        },
+                        "value": "Your Vaccine Package has been shipped!"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_3b4320ca945419ec3fed5c04650729fa8afbf0639889799afebe58b6554a9128",
+                          "typeString": "literal_string \"Your Vaccine Package has been shipped!\""
+                        }
+                      ],
+                      "id": 82,
+                      "name": "LogNewAlert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52,
+                      "src": "686:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory)"
+                      }
+                    },
+                    "id": 84,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "686:53:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 85,
+                  "nodeType": "EmitStatement",
+                  "src": "681:58:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 87,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "Delivered",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 75,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "618:2:1"
+            },
+            "returnParameters": {
+              "id": 76,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "628:0:1"
+            },
+            "scope": 131,
+            "src": "600:147:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 115,
+              "nodeType": "Block",
+              "src": "837:238:1",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                      "typeString": "enum System.VaccinationStatus"
+                    },
+                    "id": 97,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 94,
+                        "name": "VaccinationStatus",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42,
+                        "src": "851:17:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_VaccinationStatus_$42_$",
+                          "typeString": "type(enum System.VaccinationStatus)"
+                        }
+                      },
+                      "id": 95,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Vaccinated",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "851:28:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 96,
+                      "name": "_status",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 89,
+                      "src": "883:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      }
+                    },
+                    "src": "851:39:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 100,
+                  "nodeType": "IfStatement",
+                  "src": "847:64:1",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "hexValue": "56616363696e61746564",
+                      "id": 98,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "899:12:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_31873dd83fe68bfb8dccc7e436bc41295a2bf3e747258c6ed0e24a8cf48e80c2",
+                        "typeString": "literal_string \"Vaccinated\""
+                      },
+                      "value": "Vaccinated"
+                    },
+                    "functionReturnParameters": 93,
+                    "id": 99,
+                    "nodeType": "Return",
+                    "src": "892:19:1"
+                  }
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                      "typeString": "enum System.VaccinationStatus"
+                    },
+                    "id": 104,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 101,
+                        "name": "VaccinationStatus",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42,
+                        "src": "925:17:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_VaccinationStatus_$42_$",
+                          "typeString": "type(enum System.VaccinationStatus)"
+                        }
+                      },
+                      "id": 102,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "NotVaccinated",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "925:31:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 103,
+                      "name": "_status",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 89,
+                      "src": "960:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      }
+                    },
+                    "src": "925:42:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 107,
+                  "nodeType": "IfStatement",
+                  "src": "921:70:1",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "hexValue": "4e6f7456616363696e61746564",
+                      "id": 105,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "976:15:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_005b7d0683e97c1164677b6b94da86efaac6845d4e30f11782af4c1c20a7cbb6",
+                        "typeString": "literal_string \"NotVaccinated\""
+                      },
+                      "value": "NotVaccinated"
+                    },
+                    "functionReturnParameters": 93,
+                    "id": 106,
+                    "nodeType": "Return",
+                    "src": "969:22:1"
+                  }
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                      "typeString": "enum System.VaccinationStatus"
+                    },
+                    "id": 111,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 108,
+                        "name": "VaccinationStatus",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42,
+                        "src": "1005:17:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_VaccinationStatus_$42_$",
+                          "typeString": "type(enum System.VaccinationStatus)"
+                        }
+                      },
+                      "id": 109,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "Unknown",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1005:25:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 110,
+                      "name": "_status",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 89,
+                      "src": "1034:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      }
+                    },
+                    "src": "1005:36:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 114,
+                  "nodeType": "IfStatement",
+                  "src": "1001:58:1",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "hexValue": "556e6b6e6f776e",
+                      "id": 112,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1050:9:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_6ff165d3fe0272c13129fc9e1aecd998364a5fdcad04c6ae84a7d1dfc3d06a17",
+                        "typeString": "literal_string \"Unknown\""
+                      },
+                      "value": "Unknown"
+                    },
+                    "functionReturnParameters": 93,
+                    "id": 113,
+                    "nodeType": "Return",
+                    "src": "1043:16:1"
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 116,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 90,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 89,
+                  "name": "_status",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 116,
+                  "src": "772:25:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                    "typeString": "enum System.VaccinationStatus"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 88,
+                    "name": "VaccinationStatus",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 42,
+                    "src": "772:17:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                      "typeString": "enum System.VaccinationStatus"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "771:27:1"
+            },
+            "returnParameters": {
+              "id": 93,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 92,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 116,
+                  "src": "822:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 91,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "822:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "821:15:1"
+            },
+            "scope": 131,
+            "src": "753:322:1",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 129,
+              "nodeType": "Block",
+              "src": "1134:103:1",
+              "statements": [
+                {
+                  "assignments": [
+                    122
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 122,
+                      "name": "_status",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 129,
+                      "src": "1144:25:1",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                        "typeString": "enum System.VaccinationStatus"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 121,
+                        "name": "VaccinationStatus",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 42,
+                        "src": "1144:17:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                          "typeString": "enum System.VaccinationStatus"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 124,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "id": 123,
+                    "name": "vaccineStatus",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 46,
+                    "src": "1172:13:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                      "typeString": "enum System.VaccinationStatus"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1144:41:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 126,
+                        "name": "_status",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 122,
+                        "src": "1213:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                          "typeString": "enum System.VaccinationStatus"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                          "typeString": "enum System.VaccinationStatus"
+                        }
+                      ],
+                      "id": 125,
+                      "name": "getStatus",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 116,
+                      "src": "1203:9:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_enum$_VaccinationStatus_$42_$returns$_t_string_memory_ptr_$",
+                        "typeString": "function (enum System.VaccinationStatus) pure returns (string memory)"
+                      }
+                    },
+                    "id": 127,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1203:18:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "functionReturnParameters": 120,
+                  "id": 128,
+                  "nodeType": "Return",
+                  "src": "1196:25:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 130,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "Status",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 117,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1095:2:1"
+            },
+            "returnParameters": {
+              "id": 120,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 119,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 130,
+                  "src": "1119:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 118,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1119:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1118:15:1"
+            },
+            "scope": 131,
+            "src": "1080:157:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 132,
+        "src": "34:1210:1"
+      }
+    ],
+    "src": "0:1244:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Shipping.sol",
+      "exportedSymbols": {
+        "System": [
+          131
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 34,
+        "name": "PragmaDirective",
+        "src": "0:32:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            131
+          ],
+          "name": "System",
+          "scope": 132
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "System.ShippingStatus",
+              "name": "ShippingStatus"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "Pending"
+                },
+                "id": 35,
+                "name": "EnumValue",
+                "src": "78:7:1"
+              },
+              {
+                "attributes": {
+                  "name": "Shipped"
+                },
+                "id": 36,
+                "name": "EnumValue",
+                "src": "87:7:1"
+              },
+              {
+                "attributes": {
+                  "name": "Delivered"
+                },
+                "id": 37,
+                "name": "EnumValue",
+                "src": "96:9:1"
+              }
+            ],
+            "id": 38,
+            "name": "EnumDefinition",
+            "src": "56:51:1"
+          },
+          {
+            "attributes": {
+              "canonicalName": "System.VaccinationStatus",
+              "name": "VaccinationStatus"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "Vaccinated"
+                },
+                "id": 39,
+                "name": "EnumValue",
+                "src": "137:10:1"
+              },
+              {
+                "attributes": {
+                  "name": "NotVaccinated"
+                },
+                "id": 40,
+                "name": "EnumValue",
+                "src": "149:13:1"
+              },
+              {
+                "attributes": {
+                  "name": "Unknown"
+                },
+                "id": 41,
+                "name": "EnumValue",
+                "src": "164:7:1"
+              }
+            ],
+            "id": 42,
+            "name": "EnumDefinition",
+            "src": "112:61:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "status",
+              "scope": 131,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "enum System.ShippingStatus",
+              "value": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "ShippingStatus",
+                  "referencedDeclaration": 38,
+                  "type": "enum System.ShippingStatus"
+                },
+                "id": 43,
+                "name": "UserDefinedTypeName",
+                "src": "179:14:1"
+              }
+            ],
+            "id": 44,
+            "name": "VariableDeclaration",
+            "src": "179:29:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "vaccineStatus",
+              "scope": 131,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "enum System.VaccinationStatus",
+              "value": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "VaccinationStatus",
+                  "referencedDeclaration": 42,
+                  "type": "enum System.VaccinationStatus"
+                },
+                "id": 45,
+                "name": "UserDefinedTypeName",
+                "src": "214:17:1"
+              }
+            ],
+            "id": 46,
+            "name": "VariableDeclaration",
+            "src": "214:39:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "patientStatus",
+              "scope": 131,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "enum System.VaccinationStatus",
+              "value": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "VaccinationStatus",
+                  "referencedDeclaration": 42,
+                  "type": "enum System.VaccinationStatus"
+                },
+                "id": 47,
+                "name": "UserDefinedTypeName",
+                "src": "260:17:1"
+              }
+            ],
+            "id": 48,
+            "name": "VariableDeclaration",
+            "src": "260:39:1"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "documentation": null,
+              "name": "LogNewAlert"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "name": "description",
+                      "scope": 52,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 49,
+                        "name": "ElementaryTypeName",
+                        "src": "328:6:1"
+                      }
+                    ],
+                    "id": 50,
+                    "name": "VariableDeclaration",
+                    "src": "328:18:1"
+                  }
+                ],
+                "id": 51,
+                "name": "ParameterList",
+                "src": "327:20:1"
+              }
+            ],
+            "id": 52,
+            "name": "EventDefinition",
+            "src": "310:38:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 131,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 53,
+                "name": "ParameterList",
+                "src": "369:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 54,
+                "name": "ParameterList",
+                "src": "379:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "enum System.VaccinationStatus"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 48,
+                              "type": "enum System.VaccinationStatus",
+                              "value": "patientStatus"
+                            },
+                            "id": 55,
+                            "name": "Identifier",
+                            "src": "389:13:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "member_name": "Unknown",
+                              "referencedDeclaration": null,
+                              "type": "enum System.VaccinationStatus"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 42,
+                                  "type": "type(enum System.VaccinationStatus)",
+                                  "value": "VaccinationStatus"
+                                },
+                                "id": 56,
+                                "name": "Identifier",
+                                "src": "405:17:1"
+                              }
+                            ],
+                            "id": 57,
+                            "name": "MemberAccess",
+                            "src": "405:25:1"
+                          }
+                        ],
+                        "id": 58,
+                        "name": "Assignment",
+                        "src": "389:41:1"
+                      }
+                    ],
+                    "id": 59,
+                    "name": "ExpressionStatement",
+                    "src": "389:41:1"
+                  }
+                ],
+                "id": 60,
+                "name": "Block",
+                "src": "379:58:1"
+              }
+            ],
+            "id": 61,
+            "name": "FunctionDefinition",
+            "src": "358:79:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "Vaccinate",
+              "scope": 131,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 62,
+                "name": "ParameterList",
+                "src": "461:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 63,
+                "name": "ParameterList",
+                "src": "471:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "enum System.VaccinationStatus"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 48,
+                              "type": "enum System.VaccinationStatus",
+                              "value": "patientStatus"
+                            },
+                            "id": 64,
+                            "name": "Identifier",
+                            "src": "481:13:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "member_name": "Vaccinated",
+                              "referencedDeclaration": null,
+                              "type": "enum System.VaccinationStatus"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 42,
+                                  "type": "type(enum System.VaccinationStatus)",
+                                  "value": "VaccinationStatus"
+                                },
+                                "id": 65,
+                                "name": "Identifier",
+                                "src": "497:17:1"
+                              }
+                            ],
+                            "id": 66,
+                            "name": "MemberAccess",
+                            "src": "497:28:1"
+                          }
+                        ],
+                        "id": 67,
+                        "name": "Assignment",
+                        "src": "481:44:1"
+                      }
+                    ],
+                    "id": 68,
+                    "name": "ExpressionStatement",
+                    "src": "481:44:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_stringliteral_69f853d362e0822153da6b3694928a6fd5a8ca8d3f6546c4fad89fb0dc21aaa3",
+                                  "typeString": "literal_string \"Your patient has been vaccinated\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 52,
+                              "type": "function (string memory)",
+                              "value": "LogNewAlert"
+                            },
+                            "id": 69,
+                            "name": "Identifier",
+                            "src": "540:11:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "596f75722070617469656e7420686173206265656e2076616363696e61746564",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Your patient has been vaccinated\"",
+                              "value": "Your patient has been vaccinated"
+                            },
+                            "id": 70,
+                            "name": "Literal",
+                            "src": "552:34:1"
+                          }
+                        ],
+                        "id": 71,
+                        "name": "FunctionCall",
+                        "src": "540:47:1"
+                      }
+                    ],
+                    "id": 72,
+                    "name": "EmitStatement",
+                    "src": "535:52:1"
+                  }
+                ],
+                "id": 73,
+                "name": "Block",
+                "src": "471:123:1"
+              }
+            ],
+            "id": 74,
+            "name": "FunctionDefinition",
+            "src": "443:151:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "Delivered",
+              "scope": 131,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 75,
+                "name": "ParameterList",
+                "src": "618:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 76,
+                "name": "ParameterList",
+                "src": "628:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "enum System.ShippingStatus"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 44,
+                              "type": "enum System.ShippingStatus",
+                              "value": "status"
+                            },
+                            "id": 77,
+                            "name": "Identifier",
+                            "src": "638:6:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "member_name": "Delivered",
+                              "referencedDeclaration": null,
+                              "type": "enum System.ShippingStatus"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 38,
+                                  "type": "type(enum System.ShippingStatus)",
+                                  "value": "ShippingStatus"
+                                },
+                                "id": 78,
+                                "name": "Identifier",
+                                "src": "647:14:1"
+                              }
+                            ],
+                            "id": 79,
+                            "name": "MemberAccess",
+                            "src": "647:24:1"
+                          }
+                        ],
+                        "id": 80,
+                        "name": "Assignment",
+                        "src": "638:33:1"
+                      }
+                    ],
+                    "id": 81,
+                    "name": "ExpressionStatement",
+                    "src": "638:33:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_stringliteral_3b4320ca945419ec3fed5c04650729fa8afbf0639889799afebe58b6554a9128",
+                                  "typeString": "literal_string \"Your Vaccine Package has been shipped!\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 52,
+                              "type": "function (string memory)",
+                              "value": "LogNewAlert"
+                            },
+                            "id": 82,
+                            "name": "Identifier",
+                            "src": "686:11:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "596f75722056616363696e65205061636b61676520686173206265656e207368697070656421",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Your Vaccine Package has been shipped!\"",
+                              "value": "Your Vaccine Package has been shipped!"
+                            },
+                            "id": 83,
+                            "name": "Literal",
+                            "src": "698:40:1"
+                          }
+                        ],
+                        "id": 84,
+                        "name": "FunctionCall",
+                        "src": "686:53:1"
+                      }
+                    ],
+                    "id": 85,
+                    "name": "EmitStatement",
+                    "src": "681:58:1"
+                  }
+                ],
+                "id": 86,
+                "name": "Block",
+                "src": "628:119:1"
+              }
+            ],
+            "id": 87,
+            "name": "FunctionDefinition",
+            "src": "600:147:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getStatus",
+              "scope": 131,
+              "stateMutability": "pure",
+              "superFunction": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_status",
+                      "scope": 116,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "enum System.VaccinationStatus",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "VaccinationStatus",
+                          "referencedDeclaration": 42,
+                          "type": "enum System.VaccinationStatus"
+                        },
+                        "id": 88,
+                        "name": "UserDefinedTypeName",
+                        "src": "772:17:1"
+                      }
+                    ],
+                    "id": 89,
+                    "name": "VariableDeclaration",
+                    "src": "772:25:1"
+                  }
+                ],
+                "id": 90,
+                "name": "ParameterList",
+                "src": "771:27:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 116,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 91,
+                        "name": "ElementaryTypeName",
+                        "src": "822:6:1"
+                      }
+                    ],
+                    "id": 92,
+                    "name": "VariableDeclaration",
+                    "src": "822:13:1"
+                  }
+                ],
+                "id": 93,
+                "name": "ParameterList",
+                "src": "821:15:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                            "typeString": "enum System.VaccinationStatus"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "member_name": "Vaccinated",
+                              "referencedDeclaration": null,
+                              "type": "enum System.VaccinationStatus"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 42,
+                                  "type": "type(enum System.VaccinationStatus)",
+                                  "value": "VaccinationStatus"
+                                },
+                                "id": 94,
+                                "name": "Identifier",
+                                "src": "851:17:1"
+                              }
+                            ],
+                            "id": 95,
+                            "name": "MemberAccess",
+                            "src": "851:28:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 89,
+                              "type": "enum System.VaccinationStatus",
+                              "value": "_status"
+                            },
+                            "id": 96,
+                            "name": "Identifier",
+                            "src": "883:7:1"
+                          }
+                        ],
+                        "id": 97,
+                        "name": "BinaryOperation",
+                        "src": "851:39:1"
+                      },
+                      {
+                        "attributes": {
+                          "functionReturnParameters": 93
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "56616363696e61746564",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Vaccinated\"",
+                              "value": "Vaccinated"
+                            },
+                            "id": 98,
+                            "name": "Literal",
+                            "src": "899:12:1"
+                          }
+                        ],
+                        "id": 99,
+                        "name": "Return",
+                        "src": "892:19:1"
+                      }
+                    ],
+                    "id": 100,
+                    "name": "IfStatement",
+                    "src": "847:64:1"
+                  },
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                            "typeString": "enum System.VaccinationStatus"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "member_name": "NotVaccinated",
+                              "referencedDeclaration": null,
+                              "type": "enum System.VaccinationStatus"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 42,
+                                  "type": "type(enum System.VaccinationStatus)",
+                                  "value": "VaccinationStatus"
+                                },
+                                "id": 101,
+                                "name": "Identifier",
+                                "src": "925:17:1"
+                              }
+                            ],
+                            "id": 102,
+                            "name": "MemberAccess",
+                            "src": "925:31:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 89,
+                              "type": "enum System.VaccinationStatus",
+                              "value": "_status"
+                            },
+                            "id": 103,
+                            "name": "Identifier",
+                            "src": "960:7:1"
+                          }
+                        ],
+                        "id": 104,
+                        "name": "BinaryOperation",
+                        "src": "925:42:1"
+                      },
+                      {
+                        "attributes": {
+                          "functionReturnParameters": 93
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "4e6f7456616363696e61746564",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"NotVaccinated\"",
+                              "value": "NotVaccinated"
+                            },
+                            "id": 105,
+                            "name": "Literal",
+                            "src": "976:15:1"
+                          }
+                        ],
+                        "id": 106,
+                        "name": "Return",
+                        "src": "969:22:1"
+                      }
+                    ],
+                    "id": 107,
+                    "name": "IfStatement",
+                    "src": "921:70:1"
+                  },
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                            "typeString": "enum System.VaccinationStatus"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "member_name": "Unknown",
+                              "referencedDeclaration": null,
+                              "type": "enum System.VaccinationStatus"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 42,
+                                  "type": "type(enum System.VaccinationStatus)",
+                                  "value": "VaccinationStatus"
+                                },
+                                "id": 108,
+                                "name": "Identifier",
+                                "src": "1005:17:1"
+                              }
+                            ],
+                            "id": 109,
+                            "name": "MemberAccess",
+                            "src": "1005:25:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 89,
+                              "type": "enum System.VaccinationStatus",
+                              "value": "_status"
+                            },
+                            "id": 110,
+                            "name": "Identifier",
+                            "src": "1034:7:1"
+                          }
+                        ],
+                        "id": 111,
+                        "name": "BinaryOperation",
+                        "src": "1005:36:1"
+                      },
+                      {
+                        "attributes": {
+                          "functionReturnParameters": 93
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "556e6b6e6f776e",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"Unknown\"",
+                              "value": "Unknown"
+                            },
+                            "id": 112,
+                            "name": "Literal",
+                            "src": "1050:9:1"
+                          }
+                        ],
+                        "id": 113,
+                        "name": "Return",
+                        "src": "1043:16:1"
+                      }
+                    ],
+                    "id": 114,
+                    "name": "IfStatement",
+                    "src": "1001:58:1"
+                  }
+                ],
+                "id": 115,
+                "name": "Block",
+                "src": "837:238:1"
+              }
+            ],
+            "id": 116,
+            "name": "FunctionDefinition",
+            "src": "753:322:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "Status",
+              "scope": 131,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 117,
+                "name": "ParameterList",
+                "src": "1095:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 130,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 118,
+                        "name": "ElementaryTypeName",
+                        "src": "1119:6:1"
+                      }
+                    ],
+                    "id": 119,
+                    "name": "VariableDeclaration",
+                    "src": "1119:13:1"
+                  }
+                ],
+                "id": 120,
+                "name": "ParameterList",
+                "src": "1118:15:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        122
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "_status",
+                          "scope": 129,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "enum System.VaccinationStatus",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "VaccinationStatus",
+                              "referencedDeclaration": 42,
+                              "type": "enum System.VaccinationStatus"
+                            },
+                            "id": 121,
+                            "name": "UserDefinedTypeName",
+                            "src": "1144:17:1"
+                          }
+                        ],
+                        "id": 122,
+                        "name": "VariableDeclaration",
+                        "src": "1144:25:1"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 46,
+                          "type": "enum System.VaccinationStatus",
+                          "value": "vaccineStatus"
+                        },
+                        "id": 123,
+                        "name": "Identifier",
+                        "src": "1172:13:1"
+                      }
+                    ],
+                    "id": 124,
+                    "name": "VariableDeclarationStatement",
+                    "src": "1144:41:1"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 120
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "string memory",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_enum$_VaccinationStatus_$42",
+                                  "typeString": "enum System.VaccinationStatus"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 116,
+                              "type": "function (enum System.VaccinationStatus) pure returns (string memory)",
+                              "value": "getStatus"
+                            },
+                            "id": 125,
+                            "name": "Identifier",
+                            "src": "1203:9:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 122,
+                              "type": "enum System.VaccinationStatus",
+                              "value": "_status"
+                            },
+                            "id": 126,
+                            "name": "Identifier",
+                            "src": "1213:7:1"
+                          }
+                        ],
+                        "id": 127,
+                        "name": "FunctionCall",
+                        "src": "1203:18:1"
+                      }
+                    ],
+                    "id": 128,
+                    "name": "Return",
+                    "src": "1196:25:1"
+                  }
+                ],
+                "id": 129,
+                "name": "Block",
+                "src": "1134:103:1"
+              }
+            ],
+            "id": 130,
+            "name": "FunctionDefinition",
+            "src": "1080:157:1"
+          }
+        ],
+        "id": 131,
+        "name": "ContractDefinition",
+        "src": "34:1210:1"
+      }
+    ],
+    "id": 132,
+    "name": "SourceUnit",
+    "src": "0:1244:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "1630111268092": {
+      "events": {},
+      "links": {},
+      "address": "0x4F3c81e45A49249298Dac58F5277546f23e143cb",
+      "transactionHash": "0xc1a09009114aab86ace808e859192b759cd56a9c95489b9b7f470a35c410dc31"
+    },
+    "1630111511302": {
+      "events": {},
+      "links": {},
+      "address": "0x69A6F6D376736E02077DA2E4e849B8916438D934",
+      "transactionHash": "0x6906a54aa06570da5634753ef5fc54cca37d5a3a887c0e99804562525cf4380a"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-08-28T00:47:08.016Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
